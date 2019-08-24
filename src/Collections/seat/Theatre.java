@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Created by dev on 2/12/2015.
  */
-public class Theatre {
+public class Theatre implements Comparator {
     private final String theatreName;
     private Collection<Seat> seats = new ArrayList<>();
 
@@ -51,6 +51,11 @@ public class Theatre {
         for(Seat seat : seats) {
             System.out.println(seat.getSeatNumber());
         }
+    }
+
+    @Override
+    public int compare(Object o1, Object o2) {
+        return 0;
     }
 
     private class Seat {
