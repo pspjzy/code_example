@@ -1,7 +1,6 @@
 package interface_;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class player implements ISaveable{
     private String name;
