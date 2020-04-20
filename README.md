@@ -5,3 +5,5 @@
 ## Log
 - 2020/4/19
 start project.
+- 2020/4/20
+Adding selecetion sort and bubble sort implementation.
