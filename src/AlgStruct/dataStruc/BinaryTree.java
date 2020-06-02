@@ -20,15 +20,15 @@ public class BinaryTree {
                 parent = focusNode;
 
                 if (value<focusNode.value){
-                    focusNode = focusNode.leftNode;
+                    focusNode = focusNode.left;
                     if (focusNode==null){
-                        parent.leftNode=newNode;
+                        parent.left=newNode;
                         return;
                     }
                 } else {
-                    focusNode = focusNode.rightNode;
+                    focusNode = focusNode.right;
                     if (focusNode == null){
-                        parent.rightNode = newNode;
+                        parent.right = newNode;
                         return;
                     }
                 }
@@ -36,19 +36,19 @@ public class BinaryTree {
 
         }
     }
+}
 
-    private class Node {
-        Node leftNode;
-        Node rightNode;
-        int value;
+ class Node {
+    Node left;
+    Node right;
+    int value;
 
-        Node(int value){
-            this.value = value;
-        }
+    Node(int value){
+        this.value = value;
+    }
 
-        @Override
-        public String toString() {
-            return "Node value is "+value;
-        }
+    @Override
+    public String toString() {
+        return "Node value is "+value;
     }
 }
