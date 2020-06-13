@@ -1,9 +1,6 @@
 package AlgStruct.dataStruc;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 public class BFS_DFS {
     List<Integer> res = new ArrayList<>();
@@ -12,7 +9,9 @@ public class BFS_DFS {
         inOrder,
         preOrder
     }
+
     public List<List<Integer>> BFS(Node root) {
+
         List<List<Integer>> res = new ArrayList<>();
         if(root == null) return res;
         Queue<Node> q = new LinkedList<>();
@@ -41,6 +40,7 @@ public class BFS_DFS {
         }
         return res;
     }
+
     public List<Integer> DFS(Node root,DFS dfsType) {
         switch (dfsType){
             case preOrder:
@@ -64,6 +64,29 @@ public class BFS_DFS {
         }
         return res;
     }
+
+    public List<Integer> DFS(Node root) {   //iterative
+        List<Integer> list = new ArrayList<Integer>();
+
+        Stack<Node> stack = new Stack<>();
+        Node cur = root;
+
+        while(cur!=null || !stack.empty()){
+            while(cur!=null){
+                stack.add(cur);
+                cur = cur.left;
+            }
+            cur = stack.pop();
+            list.add(cur.value);
+            cur = cur.right;
+        }
+
+        return list;
+    }
+
+
+
+
     public static void printTree(){
         System.out.println("    3    ");
         System.out.print("   / ");

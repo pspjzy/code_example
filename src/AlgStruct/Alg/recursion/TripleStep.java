@@ -2,7 +2,7 @@ package AlgStruct.Alg.recursion;
 
 public class TripleStep {
     public static void main(String[] args) {
-        System.out.println(tripleStep(2));
+        System.out.println(tripleStep(7));
     }
     public static int tripleStep(int s){
 
