@@ -1,4 +1,4 @@
-package AlgStruct.LeetCode;
+package AlgStruct.LeetCode.middle;
 
 import java.util.Arrays;
 

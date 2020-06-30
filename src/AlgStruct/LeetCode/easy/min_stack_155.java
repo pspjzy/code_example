@@ -1,4 +1,4 @@
-package AlgStruct.LeetCode;
+package AlgStruct.LeetCode.easy;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +22,10 @@ public class min_stack_155 {
         return stack.get(stack.size()-1);
     }
 
+    public void print(){
+        stack.forEach(i -> System.out.println(i));
+    }
+
     public int getMin() {
         int min = Integer.MAX_VALUE;
         for(int i:stack){
@@ -31,7 +35,10 @@ public class min_stack_155 {
     }
 
     public static void main(String[] args) {
-        System.out.println(Math.pow(9,(double) 1/3)%1);
-        System.out.println();
+        min_stack_155 m = new min_stack_155();
+        m.push(1);
+        m.push(2);
+        m.push(3);
+        m.print();
     }
 }

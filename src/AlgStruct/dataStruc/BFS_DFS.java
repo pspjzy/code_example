@@ -13,7 +13,7 @@ public class BFS_DFS {
     public List<List<Integer>> BFS(Node root) {
 
         List<List<Integer>> res = new ArrayList<>();
-        if(root == null) return res;
+        if(root == null) return null;
         Queue<Node> q = new LinkedList<>();
         q.add(root);
         boolean order = true;

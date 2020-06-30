@@ -1,6 +1,7 @@
-package AlgStruct.LeetCode;
+package AlgStruct.LeetCode.easy;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class first_unique_char_string_387 {
     public int firstUniqChar(String s) {

@@ -1,4 +1,4 @@
-package AlgStruct.LeetCode;
+package AlgStruct.LeetCode.easy;
 
 public class Column_Number_171 {
     public static int titleToNumber(String s) {

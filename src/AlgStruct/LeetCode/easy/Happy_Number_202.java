@@ -1,4 +1,4 @@
-package AlgStruct.LeetCode;
+package AlgStruct.LeetCode.easy;
 
 import java.util.HashMap;
 import java.util.Map;

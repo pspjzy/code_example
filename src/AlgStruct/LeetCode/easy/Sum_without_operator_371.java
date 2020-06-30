@@ -1,4 +1,4 @@
-package AlgStruct.LeetCode;
+package AlgStruct.LeetCode.easy;
 
 public class Sum_without_operator_371 {
     public int getSum(int a, int b) {
